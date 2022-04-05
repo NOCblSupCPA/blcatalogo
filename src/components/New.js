@@ -47,14 +47,14 @@ const styles = StyleSheet.create ({
         marginBottom:5,
     },
     title:{
-        fontFamily:'Montserrat_700Bold',
+        //fontFamily:'Montserrat_700Bold',
         fontSize:15,
         color:'#4f4a4a',
         marginTop:10,
     },
     description:{
         marginTop:10,
-        fontFamily:'Montserrat_500Medium',
+        //fontFamily:'Montserrat_500Medium',
         fontSize: 15,
         color:'#4f4a4a',
     },
@@ -64,7 +64,7 @@ const styles = StyleSheet.create ({
     },
     price:{
         marginTop:10,
-        fontFamily:'Montserrat_700Bold',
+        //fontFamily:'Montserrat_700Bold',
         fontSize:15,
     }
 });
