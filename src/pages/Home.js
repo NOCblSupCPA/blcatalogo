@@ -11,7 +11,7 @@ export default function Home() {
     const navigation = useNavigation();
 
     return (
-     <ScrollView showsVerticalScrollIndicator={false} style={{backgroundColor:'#333'}}>
+     <ScrollView showsVerticalScrollIndicator={false} style={{backgroundColor:'#62AE47'}}>
          <View style={styles.header}>
             <View style={styles.teste}>
                 <Feather />
@@ -24,7 +24,9 @@ export default function Home() {
               onPress={() => 
               navigation.navigate('Detail')
             }/>
-             <New name= "TV" description="DESCRIÇÃO PLANO" onPress={() => {}}/>
+             <New name= "TV" description="DESCRIÇÃO PLANO" onPress={() =>
+                 navigation.navigate('Sobre')
+                 }/>
              <New name= "COMBO" description="DESCRIÇÃO PLANO" onPress={() => {}}/>
          </ScrollView>
      </ScrollView>

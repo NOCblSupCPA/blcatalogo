@@ -4,9 +4,11 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {Feather} from '@expo/vector-icons';
 import{ScrollView} from 'react-native-gesture-handler';
 import {TouchableOpacity} from 'react-native';
+import React, { Component } from 'react';
 
 import Home from "./pages/Home";
-import Detail from "./pages/Detail";
+import Internet from "./pages/Internet";
+import Tv from "./pages/Tv";
 
 import { View } from "react-native-web";
 
@@ -21,14 +23,15 @@ function Routes(){
                  options={{
                     title: 'BL CATÁLOGO',
                     headerTitleStyle: {
-                        fontFamily:'Montserrat_700Bold', 
+                       // fontFamily:'Montserrat_700Bold', 
                     },
                     headerRight: ()=>(
                         <Feather name="shopping-bag" size={30} color="#000" marginRight={30}/>
                     )
                  }}
                  />
-                <Stack.Screen name="Detail" component={Detail}/>
+                <Stack.Screen name="Internet" component={Internet}/>
+                <Stack.Screen name="Tv" component={Tv}/>
             </Stack.Navigator>
         </NavigationContainer>
     )

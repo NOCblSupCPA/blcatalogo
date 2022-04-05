@@ -23,7 +23,6 @@ export default function App() {
     <>
       <StatusBar style="light" backgroundColor="#000" translucent={false}/>
       <Routes/>
-      {/* <Routes/> */}
     </>
   );
 }
