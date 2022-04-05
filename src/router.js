@@ -9,6 +9,7 @@ import React, { Component } from 'react';
 import Home from "./pages/Home";
 import Internet from "./pages/Internet";
 import Tv from "./pages/Tv";
+import Combo from "./pages/Combo";
 
 import { View } from "react-native-web";
 
@@ -32,6 +33,7 @@ function Routes(){
                  />
                 <Stack.Screen name="Internet" component={Internet}/>
                 <Stack.Screen name="Tv" component={Tv}/>
+                <Stack.Screen name="Combo" component={Combo}/>
             </Stack.Navigator>
         </NavigationContainer>
     )

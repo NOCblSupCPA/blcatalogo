@@ -18,26 +18,34 @@ export default function Home() {
             </View>
          </View>
 
-         <ScrollView vertical showsVerticalScrollIndicator={false} style={styles.scroll}>
+         <View style={styles.linha}>
              <New name= "INTERNET"
               description="DESCRIÇÃO PLANO" 
               onPress={() => 
-              navigation.navigate('Detail')
+              navigation.navigate('Internet')
             }/>
              <New name= "TV" description="DESCRIÇÃO PLANO" onPress={() =>
-                 navigation.navigate('Sobre')
+                 navigation.navigate('Tv')
                  }/>
-             <New name= "COMBO" description="DESCRIÇÃO PLANO" onPress={() => {}}/>
-         </ScrollView>
+        </View>
+        <View style={styles.linha2}>
+             <New name= "COMBO" description="DESCRIÇÃO PLANO" onPress={() => 
+                navigation.navigate('Combo')
+                }/>
+             <New name= "COMBO" description="DESCRIÇÃO PLANO" onPress={() => 
+             navigation.navigate('Combo')
+             }/>
+         </View>
+         
      </ScrollView>
   );
 }
 const styles = StyleSheet.create({
-    contentNew:{
-        
+    linha:{
+        flexDirection:'row',
     },
-    title:{
-
+    linha2:{
+        flexDirection:'row',
     }
 
 });

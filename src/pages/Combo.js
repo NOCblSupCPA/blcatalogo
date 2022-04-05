@@ -1,10 +1,10 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 
-export default function Tv() {
+export default function Combo() {
  return (
    <View>
-       <Text>Tv</Text>
+       <Text>Combos</Text>
    </View>
   );
 }
