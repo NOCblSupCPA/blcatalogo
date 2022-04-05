@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image } from 'react-native';
-import {TouchableOpacity} from 'react-native-gesture-handler'
 import {Ionicons} from '@expo/vector-icons';
+import {TouchableOpacity} from 'react-native';
 
 import {useFonts, 
     Montserrat_400Regular,
@@ -67,5 +67,4 @@ const styles = StyleSheet.create ({
         fontFamily:'Montserrat_700Bold',
         fontSize:15,
     }
-
 });

@@ -1,8 +1,8 @@
 import { ScrollView } from 'react-native-gesture-handler';
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import {AppLoading} from 'expo';
+import { StyleSheet, Text, View, LogBox } from 'react-native';
+//import {AppLoading} from 'expo'; 
 
 import {useFonts, 
   Montserrat_400Regular,
@@ -12,6 +12,9 @@ import {useFonts,
 import Routes from './src/router';
 
 export default function App() {
+
+  //LogBox.ignoreLogs(['Remote debugger']);
+
   let [fontsLoaded] = useFonts({
     Montserrat_400Regular,
     Montserrat_500Medium,

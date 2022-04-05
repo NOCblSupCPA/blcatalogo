@@ -7,6 +7,8 @@ import {TouchableOpacity} from 'react-native';
 
 import Home from "./pages/Home";
 import Detail from "./pages/Detail";
+import Sobre from "./pages/Sobre";
+
 import { View } from "react-native-web";
 
 const Stack = createNativeStackNavigator();
@@ -28,6 +30,7 @@ function Routes(){
                  }}
                  />
                 <Stack.Screen name="Detail" component={Detail}/>
+                <Stack.Screen name="Sobre" component={Sobre}/>
             </Stack.Navigator>
         </NavigationContainer>
     )
