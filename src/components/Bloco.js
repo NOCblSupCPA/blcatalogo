@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet, Image, ImageBackground } from 'react-native';
 import {Ionicons} from '@expo/vector-icons';
 import {TouchableOpacity} from 'react-native';
+import {Feather} from '@expo/vector-icons';
 
 import {useFonts, 
     Montserrat_400Regular,
@@ -23,7 +24,7 @@ export default function Bloco(props) {
         </View>
 
         <Text style={styles.description}>{props.description}</Text>
-
+ 
         {/* <View style={styles.footer}>
             <View style={{width:'60%'}}>
                 <Text style={styles.price}>R$ 199,90</Text>
@@ -37,7 +38,6 @@ export default function Bloco(props) {
 }
 const styles = StyleSheet.create ({
     container:{
-        marginTop:10,
         backgroundColor:'#FFF',
         height:190,
         width:190,

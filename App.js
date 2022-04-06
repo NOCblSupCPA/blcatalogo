@@ -24,10 +24,8 @@ export default function App() {
     }
   return (
     <>
-      <StatusBar style="light" backgroundColor="#62AE47" translucent={false}/>
+      <StatusBar style="hidden" backgroundColor="#62AE47" translucent={false}/>
       <Routes/>
     </>
   );
 }
-
-
