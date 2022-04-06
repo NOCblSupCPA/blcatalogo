@@ -24,8 +24,9 @@ function Routes(){
                  options={{
                     title: 'BL CATÁLOGO',
                     headerTitleStyle: {
-                       // fontFamily:'Montserrat_700Bold', 
+                       fontFamily:'Montserrat_700Bold', 
                     },
+                    
                     headerRight: ()=>(
                         <Feather name="shopping-bag" size={30} color="#000" marginRight={30}/>
                     )

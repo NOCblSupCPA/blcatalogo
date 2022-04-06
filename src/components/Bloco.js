@@ -1,18 +1,20 @@
 import React from 'react';
-import { View, Text, StyleSheet, Image } from 'react-native';
+import { View, Text, StyleSheet, Image, ImageBackground } from 'react-native';
 import {Ionicons} from '@expo/vector-icons';
 import {TouchableOpacity} from 'react-native';
 
 import {useFonts, 
     Montserrat_400Regular,
     Montserrat_500Medium, 
-    Montserrat_700Bold} from '@expo-google-fonts/montserrat';
+    Montserrat_700Bold,
+    Montserrat_800ExtraBold_Italic} from '@expo-google-fonts/montserrat';
 
-export default function New(props) {
+export default function Bloco(props) {
     let [fontsLoaded] = useFonts({
         Montserrat_400Regular,
         Montserrat_500Medium,
-        Montserrat_700Bold
+        Montserrat_700Bold,
+        Montserrat_800ExtraBold_Italic
       });
  return (
     <TouchableOpacity onPress={props.onPress} style={styles.container}>
@@ -22,24 +24,24 @@ export default function New(props) {
 
         <Text style={styles.description}>{props.description}</Text>
 
-        <View style={styles.footer}>
-            <View style={{width:'50%'}}>
+        {/* <View style={styles.footer}>
+            <View style={{width:'60%'}}>
                 <Text style={styles.price}>R$ 199,90</Text>
             </View>
             <View style={{width:'20%', marginTop:10}}>
                 <Ionicons name="ios-add-circle" size={22} color="#333"/>
             </View>
-        </View>
+        </View> */}
     </TouchableOpacity>
   );
 }
 const styles = StyleSheet.create ({
     container:{
-        marginTop:20,
+        marginTop:10,
         backgroundColor:'#FFF',
         height:190,
         width:190,
-        elevation:3,
+        elevation:7,
         borderRadius:10,
         padding:15,
         marginRight:5,
@@ -47,15 +49,15 @@ const styles = StyleSheet.create ({
         marginBottom:5,
     },
     title:{
-        //fontFamily:'Montserrat_700Bold',
+        fontFamily:'Montserrat_700Bold',
         fontSize:15,
         color:'#4f4a4a',
         marginTop:10,
     },
     description:{
         marginTop:10,
-        //fontFamily:'Montserrat_500Medium',
-        fontSize: 15,
+        fontFamily:'Montserrat_500Medium',
+        fontSize: 14,
         color:'#4f4a4a',
     },
     footer:{
@@ -64,7 +66,7 @@ const styles = StyleSheet.create ({
     },
     price:{
         marginTop:10,
-        //fontFamily:'Montserrat_700Bold',
+    fontFamily:'Montserrat_700Bold',
         fontSize:15,
     }
 });
