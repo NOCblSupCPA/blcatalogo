@@ -7,9 +7,9 @@ export default function Internet() {
 
  return (
    <View style={styles.container}>
-   {/* <ImageBackground source={require(img)} style={styles.image}>
+   <ImageBackground source={require(img)} style={styles.image}>
       <Text>teste</Text>
-   </ImageBackground> */}
+   </ImageBackground>
    </View>
   );
 }

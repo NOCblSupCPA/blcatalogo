@@ -11,6 +11,7 @@ import Internet from "./pages/Internet";
 import Tv from "./pages/Tv";
 import Combo from "./pages/Combo";
 import News from "./pages/News";
+import Radio from "./pages/Radio";
 
 import { View } from "react-native-web";
 import { backgroundColor } from "react-native/Libraries/Components/View/ReactNativeStyleAttributes";
@@ -21,24 +22,84 @@ function Routes(){
     
     return(
         <NavigationContainer>
-            <Stack.Navigator>
+            <Stack.Navigator screenOptions={{ headerStyle: { backgroundColor: '#62AE47' } }}>
                 <Stack.Screen name="home"
                  component={Home}
                  options={{
                     title: 'BL CATÁLOGO',
                     headerTitleStyle: {
-                       fontFamily:'Montserrat_700Bold',      
-                       backgroundColor: '#62AE47',
+                       fontFamily:'Montserrat_700Bold',
+                       color:'#FFF',
                     },
                     headerRight: ()=>(
-                        <Feather name="shopping-bag" size={30} color="#000" marginRight={30}/>
+                        <Feather name="shopping-bag" size={30} color="#FFF" marginRight={30}/>
                     ),
+                   
                  }}
                  />
-                <Stack.Screen name="Internet" component={Internet}/>
-                <Stack.Screen name="Tv" component={Tv}/>
-                <Stack.Screen name="Combo" component={Combo}/>
-                <Stack.Screen name="News" component={News}/>
+                <Stack.Screen name="Internet"
+                 component={Internet}
+                 options={{
+                    title: 'LIKE FIBRA',
+                    headerTitleStyle: {
+                       fontFamily:'Montserrat_700Bold',
+                    },
+                    headerRight: ()=>(
+                        <Feather name="globe" size={30} color="#fff" marginRight={30}/>
+                    ), 
+                 }}
+                 />
+                 
+                <Stack.Screen name="Tv"
+                 component={Tv}
+                 options={{
+                    title: 'LIKE TV',
+                    headerTitleStyle: {
+                       fontFamily:'Montserrat_700Bold',
+                    },
+                    headerRight: ()=>(
+                        <Feather name="tv" size={30} color="#fff" marginRight={30}/>
+                    ), 
+                 }}
+                 />
+                <Stack.Screen name="Radio"
+                 component={Radio}
+                 options={{
+                    title: 'LIKE RÁDIO',
+                    headerTitleStyle: {
+                       fontFamily:'Montserrat_700Bold',
+                    },
+                    headerRight: ()=>(
+                        <Feather name="tv" size={30} color="#fff" marginRight={30}/>
+                    ), 
+                 }}
+                 />
+
+                <Stack.Screen name="Combo"
+                 component={Combo}
+                 options={{
+                    title: 'COMBOS',
+                    headerTitleStyle: {
+                       fontFamily:'Montserrat_700Bold',
+                    },
+                    headerRight: ()=>(
+                        <Feather name="tv" size={30} color="#fff" marginRight={30}/>
+                    ), 
+                 }}
+                 />
+                <Stack.Screen name="News"
+                 component={News}
+                 options={{
+                    title: 'NEWS',
+                    headerTitleStyle: {
+                       fontFamily:'Montserrat_700Bold',
+                    },
+                    headerRight: ()=>(
+                        <Feather name="sun" size={30} color="yellow" marginRight={30}/>
+                    ), 
+                 }}
+                 />
+
             </Stack.Navigator>
         </NavigationContainer>
     )
