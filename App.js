@@ -10,7 +10,19 @@ import {useFonts,
   Montserrat_800ExtraBold_Italic,
   Montserrat_100Thin_Italic,
   Montserrat_200ExtraLight,
-  Montserrat_300Light} from '@expo-google-fonts/montserrat';
+  Montserrat_300Light,
+  Montserrat_800ExtraBold} from '@expo-google-fonts/montserrat';
+
+  import { 
+         Inter_100Thin,
+         Inter_200ExtraLight,
+         Inter_300Light,
+         Inter_400Regular,
+         Inter_500Medium,
+         Inter_600SemiBold,
+         Inter_900Black,
+         
+        } from '@expo-google-fonts/inter';
 
 import Routes from './src/router';
 
@@ -22,8 +34,17 @@ export default function App() {
     Montserrat_800ExtraBold_Italic,
     Montserrat_100Thin_Italic,
     Montserrat_200ExtraLight,
-    Montserrat_300Light
+    Montserrat_300Light,
+    Montserrat_800ExtraBold,
+    Inter_100Thin,
+    Inter_200ExtraLight,
+    Inter_300Light,
+    Inter_400Regular,
+    Inter_500Medium,
+    Inter_600SemiBold,
+    Inter_900Black
   });
+
     if(!fontsLoaded){
       return <AppLoading/>;
     }

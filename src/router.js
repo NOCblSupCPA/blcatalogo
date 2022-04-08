@@ -1,7 +1,7 @@
 import react from "react";
 import {NavigationContainer, DefaultTheme} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {Feather} from '@expo/vector-icons';
+import {Feather, FontAwesome5, Ionicons} from '@expo/vector-icons';
 import{ScrollView} from 'react-native-gesture-handler';
 import {TouchableOpacity} from 'react-native';
 import React, { Component } from 'react';
@@ -95,7 +95,7 @@ function Routes(){
                        fontFamily:'Montserrat_700Bold',
                     },
                     headerRight: ()=>(
-                        <Feather name="sun" size={30} color="yellow" marginRight={30}/>
+                     <Ionicons name="ios-sunny" size={26} color="yellow" />
                     ), 
                  }}
                  />
