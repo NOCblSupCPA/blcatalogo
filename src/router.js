@@ -19,7 +19,6 @@ import { backgroundColor } from "react-native/Libraries/Components/View/ReactNat
 const Stack = createNativeStackNavigator();
 
 function Routes(){
-    
     return(
         <NavigationContainer>
             <Stack.Navigator screenOptions={{ headerStyle: { backgroundColor: '#62AE47' } }}>
