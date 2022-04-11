@@ -47,8 +47,7 @@ function Routes(){
                         <Feather name="globe" size={30} color="#fff" marginRight={30}/>
                     ), 
                  }}
-                 />
-                 
+                 />   
                 <Stack.Screen name="Tv"
                  component={Tv}
                  options={{
