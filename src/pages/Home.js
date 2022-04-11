@@ -6,6 +6,8 @@ import {useNavigation} from '@react-navigation/native';
 import {useFonts} from 'expo-font';
 import Bloco from '../components/Bloco'; 
 
+import { SimpleLineIcons } from '@expo/vector-icons'; 
+
 export default function Home() {
 
     const navigation = useNavigation();
@@ -14,7 +16,7 @@ export default function Home() {
         <View style={{flex:1, backgroundColor:'#f5f5f5'}}>
             <View style={styles.container}>
             <View style={styles.services}>
-                <Text style={{fontFamily:'Montserrat_300Light',
+                <Text style={{fontFamily:'Montserrat_400Regular',
                 fontSize: 19,
                 padding:10,
                 }}>Serviços</Text>
@@ -22,13 +24,19 @@ export default function Home() {
             <ScrollView horizontal showsHorizontalScrollIndicator={false}>
             <View style={styles.linha}>
                 <Bloco name= "LIKE FIBRA"
-                description="" 
+                description="• Instalação Gratuita" 
+                description1="• Wi-Fi Ultra"
+                description2="• APP - Paramount +"
+                description3 ="• APP - Noggin"
                 onPress={() => 
                 navigation.navigate('Internet')
                 }
                 />
                 <Bloco name= "LIKE TV" 
-                description="" 
+                description="• LIGHT TV"
+                description1="• LIKE BASIC"
+                description2="• LIKE PLUS"
+                description3="• LIKE TOTAL"
                 onPress={() =>
                 navigation.navigate('Tv')
                 }/>
@@ -40,7 +48,9 @@ export default function Home() {
                 }/> */}
 
                 <Bloco name= "COMBO" 
-                description="" 
+                description="•LIGHT"
+                description1="•LIFE"
+                description2="•ULTRA"
                 onPress={() => 
                 navigation.navigate('Combo')
                 }/>

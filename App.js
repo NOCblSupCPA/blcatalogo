@@ -11,7 +11,8 @@ import {useFonts,
   Montserrat_100Thin_Italic,
   Montserrat_200ExtraLight,
   Montserrat_300Light,
-  Montserrat_800ExtraBold} from '@expo-google-fonts/montserrat';
+  Montserrat_800ExtraBold,
+  Montserrat_100Thin} from '@expo-google-fonts/montserrat';
 
   import { 
          Inter_100Thin,
@@ -36,6 +37,7 @@ export default function App() {
     Montserrat_200ExtraLight,
     Montserrat_300Light,
     Montserrat_800ExtraBold,
+    Montserrat_100Thin,
     Inter_100Thin,
     Inter_200ExtraLight,
     Inter_300Light,

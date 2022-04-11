@@ -72,7 +72,6 @@ function Routes(){
                     ), 
                  }}
                  />
-
                 <Stack.Screen name="Combo"
                  component={Combo}
                  options={{
