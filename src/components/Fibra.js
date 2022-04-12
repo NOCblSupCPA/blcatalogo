@@ -23,37 +23,42 @@ export default function Fibra(props){
         Montserrat_100Thin
       });
     return(
+        
         <View style={styles.container}>
-            {/* <Text style={styles.title}>{props.name}</Text> */}
-            <Text style={styles.plano}>{props.plano}</Text>
-            <View style={styles.content}>
-                <View style={{alignSelf:'center'}}>
-                    <Text style={styles.rs}>{props.rs}</Text>
-                </View>
-                <Text style={styles.preco}>{props.preco}</Text>
-                <View style={{flexDirection:'column', alignSelf:'flex-end'}}>
-                    <Text style={styles.cent}>{props.cent}</Text>
-                    <Text style={styles.mes}>{props.mes}</Text>
-                </View>
-            </View>
-            <View style={styles.faixa}>
-                 <Text style={{fontSize:20, fontFamily:'Montserrat_300Light'}}>{props.wifi}</Text>
-                 <Text style={{fontSize:20,fontFamily: 'Montserrat_300Light' }}>{props.ultra}</Text>
-            </View>
+            <TouchableOpacity onPress={props.onPress}>
+                     {/* <Text style={styles.title}>{props.name}</Text> */}
+                    <Text style={styles.plano}>{props.plano}</Text>
+                    <View style={styles.content}>
+                        <View style={{alignSelf:'center'}}>
+                            <Text style={styles.rs}>{props.rs}</Text>
+                        </View>
+                        <Text style={styles.preco}>{props.preco}</Text>
+                        <View style={{flexDirection:'column', alignSelf:'flex-end'}}>
+                            <Text style={styles.cent}>{props.cent}</Text>
+                            <Text style={styles.mes}>{props.mes}</Text>
+                        </View>
+                    </View>
+
+                    <View style={styles.faixa}>
+                        <Text style={{fontSize:20, fontFamily:'Montserrat_300Light', color:'#62AE47'}}>{props.wifi}</Text>
+                        <Text style={{fontSize:20, fontFamily: 'Montserrat_300Light',color:'#62AE47' }}>{props.ultra}</Text>
+                    </View>
+            </TouchableOpacity>
+            
         </View>
     );
 }
 const styles = StyleSheet.create({
     container:{
-        paddingTop:50,
+        paddingTop:10,
         backgroundColor:'#FFF',
-        height:290,
+        height:230,
         width:180,
         elevation:7,
-        borderRadius:10,
+        borderRadius:4,
         marginRight:10,
         marginLeft:10,
-        marginBottom:9,
+        marginBottom:15,
         paddingHorizontal:10,
         borderWidth:0.3
     },
@@ -64,10 +69,8 @@ const styles = StyleSheet.create({
         color:'#4f4a4a'
     },
     content:{
-        
-        // alignSelf:'center',
         flexDirection:'row',
-        paddingTop: 20,
+        
     },
     rs:{
         fontSize:23,
@@ -87,8 +90,8 @@ const styles = StyleSheet.create({
     },
     faixa:{
         flexDirection:'row',
-        paddingTop:10,
-        alignSelf:'center',        
+        paddingTop:15,
+        alignSelf:'center',
     }
 
 });

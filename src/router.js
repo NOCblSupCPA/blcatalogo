@@ -12,6 +12,10 @@ import Tv from "./pages/Tv";
 import Combo from "./pages/Combo";
 import News from "./pages/News";
 import Radio from "./pages/Radio";
+import Plano from "./pages/Plano";
+import Plano1 from "./pages/Plano1";
+import Plano2 from "./pages/Plano2";
+import Plano3 from "./pages/Plano3";
 
 import { View } from "react-native-web";
 import { backgroundColor } from "react-native/Libraries/Components/View/ReactNativeStyleAttributes";
@@ -33,13 +37,12 @@ function Routes(){
                     headerRight: ()=>(
                         <Feather name="shopping-bag" size={30} color="#FFF" marginRight={30}/>
                     ),
-                   
                  }}
                  />
                 <Stack.Screen name="Internet"
                  component={Internet}
                  options={{
-                    title: 'LIKE FIBRA',
+                    title: '',
                     headerTitleStyle: {
                        fontFamily:'Montserrat_700Bold',
                     },
@@ -96,6 +99,10 @@ function Routes(){
                     ), 
                  }}
                  />
+                 <Stack.Screen name="Plano" component={Plano}/>
+                 <Stack.Screen name="Plano1" component={Plano1}/>
+                 <Stack.Screen name="Plano2" component={Plano2}/>
+                 <Stack.Screen name="Plano3" component={Plano3}/>
 
             </Stack.Navigator>
         </NavigationContainer>
