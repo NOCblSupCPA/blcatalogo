@@ -138,15 +138,6 @@ const styles = StyleSheet.create({
         fontSize:30,
         color:'#fff',
     },
-    preco:{
-        alignSelf:'auto',
-        flexDirection:'row',
-        backgroundColor:'#eca635',
-        justifyContent:'center',
-        height:80,
-        width:250,
-        alignItems:'center',
-    },
     price:{
         color:'#333',
         fontSize:20,
