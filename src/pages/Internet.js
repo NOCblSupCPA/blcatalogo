@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, ImageBackground, StyleSheet } from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import Fibra from '../components/Fibra';
+import {Feather} from '@expo/vector-icons';
 
 export default function Internet() {
 

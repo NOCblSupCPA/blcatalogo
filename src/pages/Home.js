@@ -5,7 +5,6 @@ import {Feather} from '@expo/vector-icons';
 import {useNavigation} from '@react-navigation/native';
 import {useFonts} from 'expo-font';
 import Bloco from '../components/Bloco'; 
-
 import { SimpleLineIcons } from '@expo/vector-icons'; 
 
 export default function Home() {
@@ -53,7 +52,6 @@ export default function Home() {
                     navigation.navigate('News')
                     }/>
                 </View>
-            
             </ScrollView>
             </View>
 
@@ -71,28 +69,28 @@ export default function Home() {
                         </View>
                     </View>
                     <View style={{flex:1}}>             
-                        <View style={{paddingTop:10}}>
+                        <View style={{paddingTop:20}}>
                                 <Text style={{fontFamily:'Montserrat_400Regular',
                                 fontSize:15,
                                 marginLeft:10}}>NOSSOS APPS</Text>
                         </View>
                         <View style={styles.imgs}>
-                                <Image source={require('../assets/noggin_black.png')} style={{resizeMode:'contain',
-                            width:150,
+                                <Image source={require('../assets/nogginbl.png')} style={{resizeMode:'contain',
+                            width:140,
                             height:60,
-                            marginHorizontal:25}}/>
+                            marginHorizontal:15}}/>
 
                             <TouchableOpacity>
-                                <Image source={require('../assets/paramount_black.png')} style={{resizeMode:'contain',
-                            width:150,
+                                <Image source={require('../assets/paramount1.png')} style={{resizeMode:'contain',
+                            width:140,
                             height:60,
-                            marginHorizontal:25}}/>
+                            marginHorizontal:15}}/>
                             </TouchableOpacity>
                         </View>
                     </View>
             </View>
         </View>
-  );
+    );
 }
 const styles = StyleSheet.create({
     container:{
@@ -161,7 +159,6 @@ const styles = StyleSheet.create({
         justifyContent:'center',
         paddingTop:10,
         flex:1,
-        backgroundColor:'#62AE47',
         flexDirection:'row',
         borderRadius:5,
     }

@@ -6,6 +6,7 @@ import{ScrollView} from 'react-native-gesture-handler';
 import {TouchableOpacity} from 'react-native';
 import React, { Component } from 'react';
 
+
 import Home from "./pages/Home";
 import Internet from "./pages/Internet";
 import Tv from "./pages/Tv";
@@ -23,6 +24,7 @@ import { backgroundColor } from "react-native/Libraries/Components/View/ReactNat
 const Stack = createNativeStackNavigator();
 
 function Routes(){
+   
     return(
         <NavigationContainer>
             <Stack.Navigator screenOptions={{ headerStyle: { backgroundColor: '#62AE47' } }}>
@@ -103,7 +105,6 @@ function Routes(){
                  <Stack.Screen name="Plano1" component={Plano1}/>
                  <Stack.Screen name="Plano2" component={Plano2}/>
                  <Stack.Screen name="Plano3" component={Plano3}/>
-
             </Stack.Navigator>
         </NavigationContainer>
     )
