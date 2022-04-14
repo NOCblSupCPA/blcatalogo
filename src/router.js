@@ -6,7 +6,6 @@ import{ScrollView} from 'react-native-gesture-handler';
 import {TouchableOpacity} from 'react-native';
 import React, { Component } from 'react';
 
-
 import Home from "./pages/Home";
 import Internet from "./pages/Internet";
 import Tv from "./pages/Tv";

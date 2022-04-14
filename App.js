@@ -46,7 +46,6 @@ export default function App() {
     Inter_600SemiBold,
     Inter_900Black
   });
-
     if(!fontsLoaded){
       return <AppLoading/>;
     }
