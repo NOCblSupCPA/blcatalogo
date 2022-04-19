@@ -90,5 +90,4 @@ const styles = StyleSheet.create({
         paddingTop:15,
         alignSelf:'center',
     }
-
 });

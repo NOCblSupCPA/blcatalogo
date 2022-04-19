@@ -11,7 +11,7 @@ import AppIntroSlider from 'react-native-app-intro-slider';
 export default function Home() {
 
     const navigation = useNavigation();
-
+    
     return (
         <View style={{flex:1, backgroundColor:'#f5f5f5'}}>
             <View style={styles.container}>
