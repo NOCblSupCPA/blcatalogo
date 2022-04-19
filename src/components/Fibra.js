@@ -3,7 +3,6 @@ import { View, Text, StyleSheet, Image, ImageBackground, } from 'react-native';
 import {Ionicons} from '@expo/vector-icons';
 import {TouchableOpacity} from 'react-native';
 import {Feather} from '@expo/vector-icons';
-
 import {useFonts, 
     Montserrat_400Regular,
     Montserrat_500Medium, 
@@ -22,8 +21,7 @@ export default function Fibra(props){
         Montserrat_600SemiBold,
         Montserrat_100Thin
       });
-    return(
-        
+    return( 
         <View style={styles.container}>
             <TouchableOpacity onPress={props.onPress}>
                      {/* <Text style={styles.title}>{props.name}</Text> */}

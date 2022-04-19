@@ -6,17 +6,20 @@ import {useNavigation} from '@react-navigation/native';
 import {useFonts} from 'expo-font';
 import Bloco from '../components/Bloco'; 
 import { SimpleLineIcons } from '@expo/vector-icons'; 
+import AppIntroSlider from 'react-native-app-intro-slider';
 
 export default function Home() {
 
     const navigation = useNavigation();
+
     return (
         <View style={{flex:1, backgroundColor:'#f5f5f5'}}>
             <View style={styles.container}>
                 <View style={styles.services}>
                     <Text style={{fontFamily:'Montserrat_400Regular',
                     fontSize: 19,
-                    padding:10,
+                    paddingTop:5,
+                    marginLeft:10,
                     }}>Serviços</Text>
                 </View>
                 <ScrollView horizontal showsHorizontalScrollIndicator={false}>
@@ -45,7 +48,6 @@ export default function Home() {
                     onPress={() => 
                     navigation.navigate('Combo')
                     }/>
-
                     <Bloco name= "NOVIDADES EM BREVE..." 
                     description="" 
                     onPress={() => 
@@ -65,11 +67,11 @@ export default function Home() {
                             width:370,
                             height:342,
                             borderRadius:9,
-                            }} />
+                            }}/>
                         </View>
                     </View>
                     <View style={{flex:1}}>             
-                        <View style={{paddingTop:20}}>
+                        <View style={{paddingTop:10}}>
                                 <Text style={{fontFamily:'Montserrat_400Regular',
                                 fontSize:15,
                                 marginLeft:10}}>NOSSOS APPS</Text>
@@ -80,12 +82,10 @@ export default function Home() {
                             height:60,
                             marginHorizontal:15}}/>
 
-                            <TouchableOpacity>
                                 <Image source={require('../assets/paramount1.png')} style={{resizeMode:'contain',
                             width:140,
                             height:60,
                             marginHorizontal:15}}/>
-                            </TouchableOpacity>
                         </View>
                     </View>
             </View>
@@ -94,11 +94,12 @@ export default function Home() {
 }
 const styles = StyleSheet.create({
     container:{
+        flex:1,
         backgroundColor:'#62AE47',
-        height:'35%',
+        //height:'35%',
     },
-    subtitle:{
-        marginVertical:2
+    subtitle:{ 
+
     },
     text:{
         marginLeft:10,
@@ -141,7 +142,6 @@ const styles = StyleSheet.create({
         fontSize:20,
         marginRight:5,
         fontFamily:'Montserrat_800ExtraBold',
-
     },
     valor:{
         color:'#333',
@@ -155,10 +155,10 @@ const styles = StyleSheet.create({
         alignSelf:'flex-end',
     },
     imgs:{
+        flex:1,
         alignItems:'center',
         justifyContent:'center',
         paddingTop:10,
-        flex:1,
         flexDirection:'row',
         borderRadius:5,
     }
