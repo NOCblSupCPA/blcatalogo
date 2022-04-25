@@ -16,6 +16,7 @@ import Plano from "./pages/Plano";
 import Plano1 from "./pages/Plano1";
 import Plano2 from "./pages/Plano2";
 import Plano3 from "./pages/Plano3";
+import Montar from "./pages/Montar";
 
 import { View } from "react-native-web";
 import { backgroundColor } from "react-native/Libraries/Components/View/ReactNativeStyleAttributes";
@@ -104,6 +105,7 @@ function Routes(){
                  <Stack.Screen name="Plano1" component={Plano1}/>
                  <Stack.Screen name="Plano2" component={Plano2}/>
                  <Stack.Screen name="Plano3" component={Plano3}/>
+                 <Stack.Screen name="Montar" component={Montar}/>
             </Stack.Navigator>
         </NavigationContainer>
     )

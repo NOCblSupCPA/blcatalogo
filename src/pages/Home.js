@@ -1,25 +1,31 @@
 import React, {useState} from 'react';
-import { View, Text, StyleSheet, Image, ImageBackground} from 'react-native';
-import { ScrollView,TextInput, TouchableOpacity } from 'react-native-gesture-handler';
+import { View, Text, StyleSheet, Image, ImageBackground, TouchableOpacity} from 'react-native';
+import { ScrollView,TextInput } from 'react-native-gesture-handler';
 import {Feather} from '@expo/vector-icons';
 import {useNavigation} from '@react-navigation/native';
 import {useFonts} from 'expo-font';
 import Bloco from '../components/Bloco'; 
 import { SimpleLineIcons } from '@expo/vector-icons'; 
 import AppIntroSlider from 'react-native-app-intro-slider';
+import { Montserrat_100Thin } from '@expo-google-fonts/montserrat';
+import { Keyboard } from 'react-native-web';
 
 const slides = [
     {
         key:'1',
-        image: require('../assets/360MB1024.png')
+        image: require('../assets/360MB1024.png'),
     },
     {
         key:'2',
-        image:require('../assets/bl02.png')
+        image:require('../assets/bl02.png'),
     },
     {
         key:'3',
-        image:require('../assets/grupobl.png')
+        image:require('../assets/grupobl.png'),
+    },
+    {
+        key:'4',
+        title: 'titulo 4',
     }
 ]
 
@@ -35,12 +41,15 @@ export default function Home() {
                          height: '100%',
                     }}
                 />
-                
+                <Text>{item.title}</Text>
             </View>
+            
           );
     }
     const [showHome, setShowHome] = useState(false);
+
     const navigation = useNavigation();
+
     if(showHome){
         return <Text>Entrou na home</Text>
     }
@@ -90,8 +99,13 @@ export default function Home() {
                 </ScrollView>
                 </View>
 
-                <View style={{marginTop:10, width:'100%', height:'55%'}}>  
-                <Text style={{fontFamily:'Montserrat_400Regular', marginBottom:5, fontSize:20}}>PARA SUA CASA</Text>         
+                <View>
+                 <TouchableOpacity style={styles.btnPlano} onPress={ ()=> navigation.navigate('Montar')}>
+                     <Text style={{fontFamily:'Montserrat_400Regular', textAlign:'center', color:'#fff' }}>MONTE SEU PLANO</Text>
+                 </TouchableOpacity>
+                </View>
+
+                <View style={{marginTop:10, width:'90%', height:'50%', alignSelf:'center'}}>
                 <AppIntroSlider
                 renderItem={render}
                 data={slides}
@@ -106,7 +120,7 @@ export default function Home() {
             </View>
         );
     }
-    }
+}
 
 const styles = StyleSheet.create({
     container:{
@@ -176,5 +190,14 @@ const styles = StyleSheet.create({
         paddingTop:10,
         flexDirection:'row',
         borderRadius:5,
-    }
+    },
+    btnPlano:{
+        width:'50%',
+        height:50,
+        backgroundColor:'#333',
+        borderRadius:20,
+        justifyContent:'center',
+        marginVertical:10,
+        marginLeft:20
+    },
 });
